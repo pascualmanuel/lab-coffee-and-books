@@ -10,10 +10,32 @@
    </head>
 
    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">Coffee & Books </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/show">Places</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/new">Create New</a>
+    </ul>
+  </div>
+</nav>
 
       {{{body}}}
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
       <script src="/js/script.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUHJNGDopbzClxfoi3uqImN3aXJjg8_vs&callback=initMap"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
    </body>
 
 </html>

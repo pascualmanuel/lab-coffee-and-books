@@ -1,0 +1,23 @@
+{{!-- <section style="margin: 20px;">
+        {{#each places}}
+           <h2>{{name}} </h2>
+           <p> {{type}}</p>
+            <a href="/{{_id}}/edit"> Edit: {{name}}</a> <br>
+            <a href="/places/{{ this._id}}/delete" style="color:red;"> Delete {{name}}</a>  </br> <br>
+        {{/each }}
+</section> --}}
+  <section style="display: flex; flex-wrap: wrap; justify-content: space-around; margin:20px">
+        {{#each places}}
+      
+<div class="card" style="width: 18rem; margin:5px">
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted" style="text-transform: capitalize;" >{{type}}</h6>
+    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <a href="/{{_id}}/edit" class="card-link">Edit: {{name}}</a> <br>
+    <a href="/places/{{ this._id}}/delete" style="color:red;" class="card-link">Delete {{name}}</a>
+  </div>
+  
+</div>
+        {{/each }}
+        </section>
