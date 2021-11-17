@@ -53,22 +53,6 @@ function placeShops(map, places) {
     console.log(places.name)
 
   });
-
-  // var infowindow = new google.maps.InfoWindow({
-  //   content: places.name[1]
-  // });
-  
-  // // Creando un marker en el mapa
-  // var marker = new google.maps.Marker({
-  //   position: new google.maps.LatLng(-34.5862088, -58.415677500000015),
-  //   map: map,
-  //   title: places.name
-  // });
-    
-  // // Al hacer click sobre el marker mostraremos su información en una ventana
-  // marker.addListener('click', function() {
-  //   infowindow.open(map, marker);
-  // });
   
   // 9. Instrucciones: Finalmente retorno los markers por si los necesitase a futuro
   return markers
